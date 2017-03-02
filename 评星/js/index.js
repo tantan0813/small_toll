@@ -24,6 +24,9 @@ window.onload = function () {
                 count = index + 1;
                 staring = star.slice(0, count);
                 dark = star.slice(count);
+                Array.prototype.forEach.call(target, function (a) {
+                    a.className = "";
+                });
                 [].concat(_toConsumableArray(staring)).forEach(function (a) {
                     a.className = class_name;
                 });
