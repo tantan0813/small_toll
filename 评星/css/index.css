@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#star_alter {
+  font-family: "微软雅黑", "黑体", "Microsoft YaHei UI", "Microsoft YaHei", "SimSun", "宋体", "Segoe UI", Tahoma, Helvetica, Sans-Serif;
+  width: 500px;
+  height: 300px;
+  border: 1px solid black;
+  position: fixed;
+  top: 30%;
+  left: 34%;
+  border-radius: 8px;
+}
+#star_alter h4 {
+  text-align: center;
+  font-size: 26px;
+  margin: 0;
+  padding: 34px 0 28px;
+}
+#star_alter > div {
+  position: relative;
+  top: 7px;
+  left: 0;
+}
+#star_alter > div > p {
+  display: inline-block;
+  font-size: 20px;
+  margin-left: 110px;
+}
+#star_alter > div .star {
+  list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: -3px;
+  left: 204px;
+}
+#star_alter > div .star li {
+  width: 32px;
+  height: 30px;
+  cursor: pointer;
+}
+#star_alter > div .star li i {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url("../../img/star.png") bottom center;
+  background-size: 95% ;
+}
+#star_alter > div .star li.active i {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url("../../img/staring.png") top center;
+  background-size: 110% ;
+}
+#star_alter > div .button {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 104px;
+  border-top: 1px solid black;
+  position: relative;
+  top: 66px;
+  left: 0;
+  cursor: pointer;
+}
+#star_alter > div .button div {
+  display: inline-block;
+  width: 50%;
+  line-height: 104px;
+  text-align: center;
+  color: #00b3ee;
+  font-size: 30px;
+}
+#star_alter > div .button div:nth-of-type(1) {
+  border-right: 1px solid black;
+}
